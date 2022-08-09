@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name "linear actuator")(type Legacy)(uri "${KIPRJMOD}/linear actuator.lib")(options "")(descr ""))
+)

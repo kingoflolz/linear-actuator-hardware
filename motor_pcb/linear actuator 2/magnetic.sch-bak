@@ -1,0 +1,199 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 4 8
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L power:GND #PWR0188
+U 1 1 62BF3248
+P 4500 4050
+F 0 "#PWR0188" H 4500 3800 50  0001 C CNN
+F 1 "GND" H 4505 3877 50  0000 C CNN
+F 2 "" H 4500 4050 50  0001 C CNN
+F 3 "" H 4500 4050 50  0001 C CNN
+	1    4500 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4500 3950 4500 4050
+$Comp
+L power:+3.3V #PWR0187
+U 1 1 62BF4177
+P 4500 3150
+F 0 "#PWR0187" H 4500 3000 50  0001 C CNN
+F 1 "+3.3V" H 4515 3323 50  0000 C CNN
+F 2 "" H 4500 3150 50  0001 C CNN
+F 3 "" H 4500 3150 50  0001 C CNN
+	1    4500 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L linear~actuator:QMC5883L U5
+U 1 1 62BF67A4
+P 4900 3650
+F 0 "U5" H 4900 4375 50  0000 C CNN
+F 1 "QMC5883L" H 4900 4284 50  0000 C CNN
+F 2 "linear actuator:QFN-16_3x3_Pitch0.5mm" H 4900 3110 50  0001 C CNN
+F 3 "" H 4900 3110 50  0001 C CNN
+	1    4900 3650
+	1    0    0    -1  
+$EndComp
+Connection ~ 4500 4050
+Wire Wire Line
+	4500 3250 4500 3150
+Connection ~ 4500 3150
+$Comp
+L power:+3.3V #PWR0189
+U 1 1 62BF7D20
+P 5300 3150
+F 0 "#PWR0189" H 5300 3000 50  0001 C CNN
+F 1 "+3.3V" H 5315 3323 50  0000 C CNN
+F 2 "" H 5300 3150 50  0001 C CNN
+F 3 "" H 5300 3150 50  0001 C CNN
+	1    5300 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C90
+U 1 1 62BF8F95
+P 5500 3450
+F 0 "C90" H 5615 3496 50  0000 L CNN
+F 1 "0.22uF" H 5615 3405 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 5538 3300 50  0001 C CNN
+F 3 "~" H 5500 3450 50  0001 C CNN
+	1    5500 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C91
+U 1 1 62BF94AA
+P 5500 3900
+F 0 "C91" H 5615 3946 50  0000 L CNN
+F 1 "4.7uF" H 5615 3855 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 5538 3750 50  0001 C CNN
+F 3 "~" H 5500 3900 50  0001 C CNN
+	1    5500 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0190
+U 1 1 62BF9DC6
+P 5500 4050
+F 0 "#PWR0190" H 5500 3800 50  0001 C CNN
+F 1 "GND" H 5505 3877 50  0000 C CNN
+F 2 "" H 5500 4050 50  0001 C CNN
+F 3 "" H 5500 4050 50  0001 C CNN
+	1    5500 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5300 3750 5500 3750
+Wire Wire Line
+	5500 3600 5300 3600
+Wire Wire Line
+	5300 3600 5300 3550
+Wire Wire Line
+	5500 3300 5300 3300
+Wire Wire Line
+	5300 3300 5300 3350
+$Comp
+L power:GND #PWR?
+U 1 1 62C13EF8
+P 6450 3750
+AR Path="/63347CD9/62C13EF8" Ref="#PWR?"  Part="1" 
+AR Path="/63451ACA/62C13EF8" Ref="#PWR?"  Part="1" 
+AR Path="/63451D42/62C13EF8" Ref="#PWR?"  Part="1" 
+AR Path="/62C13EF8" Ref="#PWR?"  Part="1" 
+AR Path="/62BEEC4C/62C13EF8" Ref="#PWR0192"  Part="1" 
+F 0 "#PWR0192" H 6450 3500 50  0001 C CNN
+F 1 "GND" H 6455 3577 50  0000 C CNN
+F 2 "" H 6450 3750 50  0001 C CNN
+F 3 "" H 6450 3750 50  0001 C CNN
+	1    6450 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 62C13EFE
+P 6450 3600
+AR Path="/63347CD9/62C13EFE" Ref="C?"  Part="1" 
+AR Path="/63451ACA/62C13EFE" Ref="C?"  Part="1" 
+AR Path="/63451D42/62C13EFE" Ref="C?"  Part="1" 
+AR Path="/62C13EFE" Ref="C?"  Part="1" 
+AR Path="/62BEEC4C/62C13EFE" Ref="C92"  Part="1" 
+F 0 "C92" H 6335 3554 50  0000 R CNN
+F 1 "0.1uF" H 6335 3645 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 6488 3450 50  0001 C CNN
+F 3 "~" H 6450 3600 50  0001 C CNN
+	1    6450 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0191
+U 1 1 62C14690
+P 6450 3450
+F 0 "#PWR0191" H 6450 3300 50  0001 C CNN
+F 1 "+3.3V" H 6465 3623 50  0000 C CNN
+F 2 "" H 6450 3450 50  0001 C CNN
+F 3 "" H 6450 3450 50  0001 C CNN
+	1    6450 3450
+	1    0    0    -1  
+$EndComp
+Text HLabel 4500 3450 0    50   Input ~ 0
+SCL
+Text HLabel 4500 3550 0    50   Input ~ 0
+SDA
+$Comp
+L power:GND #PWR?
+U 1 1 632C2DD9
+P 6950 3750
+AR Path="/63347CD9/632C2DD9" Ref="#PWR?"  Part="1" 
+AR Path="/63451ACA/632C2DD9" Ref="#PWR?"  Part="1" 
+AR Path="/63451D42/632C2DD9" Ref="#PWR?"  Part="1" 
+AR Path="/632C2DD9" Ref="#PWR?"  Part="1" 
+AR Path="/62BEEC4C/632C2DD9" Ref="#PWR0240"  Part="1" 
+F 0 "#PWR0240" H 6950 3500 50  0001 C CNN
+F 1 "GND" H 6955 3577 50  0000 C CNN
+F 2 "" H 6950 3750 50  0001 C CNN
+F 3 "" H 6950 3750 50  0001 C CNN
+	1    6950 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 632C2DDF
+P 6950 3600
+AR Path="/63347CD9/632C2DDF" Ref="C?"  Part="1" 
+AR Path="/63451ACA/632C2DDF" Ref="C?"  Part="1" 
+AR Path="/63451D42/632C2DDF" Ref="C?"  Part="1" 
+AR Path="/632C2DDF" Ref="C?"  Part="1" 
+AR Path="/62BEEC4C/632C2DDF" Ref="C106"  Part="1" 
+F 0 "C106" H 6835 3554 50  0000 R CNN
+F 1 "0.1uF" H 6835 3645 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 6988 3450 50  0001 C CNN
+F 3 "~" H 6950 3600 50  0001 C CNN
+	1    6950 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0241
+U 1 1 632C2DE5
+P 6950 3450
+F 0 "#PWR0241" H 6950 3300 50  0001 C CNN
+F 1 "+3.3V" H 6965 3623 50  0000 C CNN
+F 2 "" H 6950 3450 50  0001 C CNN
+F 3 "" H 6950 3450 50  0001 C CNN
+	1    6950 3450
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

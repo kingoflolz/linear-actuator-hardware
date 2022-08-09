@@ -1,0 +1,414 @@
+[Format]      =  4.0
+[Frequency]   =  0
+[Precision]   =  1e-008
+[MinAngle]    =  30
+[DoSmartMesh] =  1
+[Depth]       =  1
+[LengthUnits] =  millimeters
+[ProblemType] =  planar
+[Coordinates] =  cartesian
+[ACSolver]    =  0
+[PrevType]    =  0
+[PrevSoln]    =  ""
+[Comment]     =  "Add comments here."
+[PointProps]   = 0
+[BdryProps]   = 10
+  <BeginBdry>
+    <BdryName> = "dirichlet"
+    <BdryType> = 0
+    <A_0> = 0
+    <A_1> = 0
+    <A_2> = 0
+    <Phi> = 0
+    <c0> = 0
+    <c0i> = 0
+    <c1> = 0
+    <c1i> = 0
+    <Mu_ssd> = 0
+    <Sigma_ssd> = 0
+    <innerangle> = 0
+    <outerangle> = 0
+  <EndBdry>
+  <BeginBdry>
+    <BdryName> = "apb1"
+    <BdryType> = 5
+    <A_0> = 0
+    <A_1> = 0
+    <A_2> = 0
+    <Phi> = 0
+    <c0> = 0
+    <c0i> = 0
+    <c1> = 0
+    <c1i> = 0
+    <Mu_ssd> = 0
+    <Sigma_ssd> = 0
+    <innerangle> = 0
+    <outerangle> = 0
+  <EndBdry>
+  <BeginBdry>
+    <BdryName> = "apb2"
+    <BdryType> = 5
+    <A_0> = 0
+    <A_1> = 0
+    <A_2> = 0
+    <Phi> = 0
+    <c0> = 0
+    <c0i> = 0
+    <c1> = 0
+    <c1i> = 0
+    <Mu_ssd> = 0
+    <Sigma_ssd> = 0
+    <innerangle> = 0
+    <outerangle> = 0
+  <EndBdry>
+  <BeginBdry>
+    <BdryName> = "apb3"
+    <BdryType> = 5
+    <A_0> = 0
+    <A_1> = 0
+    <A_2> = 0
+    <Phi> = 0
+    <c0> = 0
+    <c0i> = 0
+    <c1> = 0
+    <c1i> = 0
+    <Mu_ssd> = 0
+    <Sigma_ssd> = 0
+    <innerangle> = 0
+    <outerangle> = 0
+  <EndBdry>
+  <BeginBdry>
+    <BdryName> = "apb4"
+    <BdryType> = 5
+    <A_0> = 0
+    <A_1> = 0
+    <A_2> = 0
+    <Phi> = 0
+    <c0> = 0
+    <c0i> = 0
+    <c1> = 0
+    <c1i> = 0
+    <Mu_ssd> = 0
+    <Sigma_ssd> = 0
+    <innerangle> = 0
+    <outerangle> = 0
+  <EndBdry>
+  <BeginBdry>
+    <BdryName> = "apb5"
+    <BdryType> = 5
+    <A_0> = 0
+    <A_1> = 0
+    <A_2> = 0
+    <Phi> = 0
+    <c0> = 0
+    <c0i> = 0
+    <c1> = 0
+    <c1i> = 0
+    <Mu_ssd> = 0
+    <Sigma_ssd> = 0
+    <innerangle> = 0
+    <outerangle> = 0
+  <EndBdry>
+  <BeginBdry>
+    <BdryName> = "apb6"
+    <BdryType> = 5
+    <A_0> = 0
+    <A_1> = 0
+    <A_2> = 0
+    <Phi> = 0
+    <c0> = 0
+    <c0i> = 0
+    <c1> = 0
+    <c1i> = 0
+    <Mu_ssd> = 0
+    <Sigma_ssd> = 0
+    <innerangle> = 0
+    <outerangle> = 0
+  <EndBdry>
+  <BeginBdry>
+    <BdryName> = "apb7"
+    <BdryType> = 5
+    <A_0> = 0
+    <A_1> = 0
+    <A_2> = 0
+    <Phi> = 0
+    <c0> = 0
+    <c0i> = 0
+    <c1> = 0
+    <c1i> = 0
+    <Mu_ssd> = 0
+    <Sigma_ssd> = 0
+    <innerangle> = 0
+    <outerangle> = 0
+  <EndBdry>
+  <BeginBdry>
+    <BdryName> = "apb8"
+    <BdryType> = 5
+    <A_0> = 0
+    <A_1> = 0
+    <A_2> = 0
+    <Phi> = 0
+    <c0> = 0
+    <c0i> = 0
+    <c1> = 0
+    <c1i> = 0
+    <Mu_ssd> = 0
+    <Sigma_ssd> = 0
+    <innerangle> = 0
+    <outerangle> = 0
+  <EndBdry>
+  <BeginBdry>
+    <BdryName> = "apb9"
+    <BdryType> = 5
+    <A_0> = 0
+    <A_1> = 0
+    <A_2> = 0
+    <Phi> = 0
+    <c0> = 0
+    <c0i> = 0
+    <c1> = 0
+    <c1i> = 0
+    <Mu_ssd> = 0
+    <Sigma_ssd> = 0
+    <innerangle> = 0
+    <outerangle> = 0
+  <EndBdry>
+[BlockProps]  = 4
+  <BeginBlock>
+    <BlockName> = "N40"
+    <Mu_x> = 1.05
+    <Mu_y> = 1.05
+    <H_c> = 969969
+    <H_cAngle> = 0
+    <J_re> = 0
+    <J_im> = 0
+    <Sigma> = 0.66700000000000004
+    <d_lam> = 0
+    <Phi_h> = 0
+    <Phi_hx> = 0
+    <Phi_hy> = 0
+    <LamType> = 0
+    <LamFill> = 1
+    <NStrands> = 0
+    <WireD> = 0
+    <BHPoints> = 0
+  <EndBlock>
+  <BeginBlock>
+    <BlockName> = "1018 Steel"
+    <Mu_x> = 529
+    <Mu_y> = 529
+    <H_c> = 0
+    <H_cAngle> = 0
+    <J_re> = 0
+    <J_im> = 0
+    <Sigma> = 5.7999999999999998
+    <d_lam> = 0
+    <Phi_h> = 20
+    <Phi_hx> = 0
+    <Phi_hy> = 0
+    <LamType> = 0
+    <LamFill> = 1
+    <NStrands> = 0
+    <WireD> = 0
+    <BHPoints> = 13
+      0	0
+      0.25030000000000002	238.73249999999999
+      0.92500000000000004	795.77499999999998
+      1.25	1591.55
+      1.3899999999999999	2387.3249999999998
+      1.5249999999999999	3978.875
+      1.71	7957.75
+      1.8700000000000001	15915.5
+      1.9550000000000001	23873.25
+      2.02	39788.75
+      2.1099999999999999	79577.5
+      2.2250000000000001	159155
+      2.4300000000000002	318310
+  <EndBlock>
+  <BeginBlock>
+    <BlockName> = "Air"
+    <Mu_x> = 1
+    <Mu_y> = 1
+    <H_c> = 0
+    <H_cAngle> = 0
+    <J_re> = 0
+    <J_im> = 0
+    <Sigma> = 0
+    <d_lam> = 0
+    <Phi_h> = 0
+    <Phi_hx> = 0
+    <Phi_hy> = 0
+    <LamType> = 0
+    <LamFill> = 1
+    <NStrands> = 0
+    <WireD> = 0
+    <BHPoints> = 0
+  <EndBlock>
+  <BeginBlock>
+    <BlockName> = "Copper"
+    <Mu_x> = 1
+    <Mu_y> = 1
+    <H_c> = 0
+    <H_cAngle> = 0
+    <J_re> = 0
+    <J_im> = 0
+    <Sigma> = 58
+    <d_lam> = 0
+    <Phi_h> = 0
+    <Phi_hx> = 0
+    <Phi_hy> = 0
+    <LamType> = 0
+    <LamFill> = 1
+    <NStrands> = 0
+    <WireD> = 0
+    <BHPoints> = 0
+  <EndBlock>
+[CircuitProps]  = 6
+  <BeginCircuit>
+    <CircuitName> = "circuit1"
+    <TotalAmps_re> = 4.9999999999999991
+    <TotalAmps_im> = 0
+    <CircuitType> = 1
+  <EndCircuit>
+  <BeginCircuit>
+    <CircuitName> = "circuit2"
+    <TotalAmps_re> = 4.9999999999999991
+    <TotalAmps_im> = 0
+    <CircuitType> = 1
+  <EndCircuit>
+  <BeginCircuit>
+    <CircuitName> = "circuit3"
+    <TotalAmps_re> = 10
+    <TotalAmps_im> = 0
+    <CircuitType> = 1
+  <EndCircuit>
+  <BeginCircuit>
+    <CircuitName> = "circuit4"
+    <TotalAmps_re> = 10
+    <TotalAmps_im> = 0
+    <CircuitType> = 1
+  <EndCircuit>
+  <BeginCircuit>
+    <CircuitName> = "circuit5"
+    <TotalAmps_re> = 4.9999999999999991
+    <TotalAmps_im> = 0
+    <CircuitType> = 1
+  <EndCircuit>
+  <BeginCircuit>
+    <CircuitName> = "circuit6"
+    <TotalAmps_re> = 4.9999999999999991
+    <TotalAmps_im> = 0
+    <CircuitType> = 1
+  <EndCircuit>
+[NumPoints] = 44
+0	1.3	0	0
+10	1.3	0	0
+0	2.8799999999999999	0	0
+10	2.8799999999999999	0	0
+0	-1.3	0	0
+10	-1.3	0	0
+0	-2.8799999999999999	0	0
+10	-2.8799999999999999	0	0
+0	5.8799999999999999	0	0
+10	5.8799999999999999	0	0
+0	-5.8799999999999999	0	0
+10	-5.8799999999999999	0	0
+0	10.879999999999999	0	0
+10	10.879999999999999	0	0
+0	-10.879999999999999	0	0
+10	-10.879999999999999	0	0
+0	0.83500000000000008	0	0
+0	-0.83500000000000008	0	0
+10	0.83500000000000008	0	0
+10	-0.83500000000000008	0	0
+0.10000000000000009	0.80000000000000004	0	0
+3.2333333333333334	0.80000000000000004	0	0
+0.10000000000000009	0.83500000000000008	0	0
+3.2333333333333334	0.83500000000000008	0	0
+0.10000000000000009	-0.80000000000000004	0	0
+3.2333333333333334	-0.80000000000000004	0	0
+0.10000000000000009	-0.83500000000000008	0	0
+3.2333333333333334	-0.83500000000000008	0	0
+3.4333333333333336	0.80000000000000004	0	0
+6.5666666666666664	0.80000000000000004	0	0
+3.4333333333333336	0.83500000000000008	0	0
+6.5666666666666664	0.83500000000000008	0	0
+3.4333333333333336	-0.80000000000000004	0	0
+6.5666666666666664	-0.80000000000000004	0	0
+3.4333333333333336	-0.83500000000000008	0	0
+6.5666666666666664	-0.83500000000000008	0	0
+6.7666666666666675	0.80000000000000004	0	0
+9.9000000000000004	0.80000000000000004	0	0
+6.7666666666666675	0.83500000000000008	0	0
+9.9000000000000004	0.83500000000000008	0	0
+6.7666666666666675	-0.80000000000000004	0	0
+9.9000000000000004	-0.80000000000000004	0	0
+6.7666666666666675	-0.83500000000000008	0	0
+9.9000000000000004	-0.83500000000000008	0	0
+[NumSegments] = 50
+0	1	-1	0	0	0
+2	0	-1	4	0	0
+3	2	-1	0	0	0
+1	3	-1	4	0	0
+4	5	-1	0	0	0
+6	4	-1	7	0	0
+7	6	-1	0	0	0
+5	7	-1	7	0	0
+8	2	-1	3	0	0
+9	8	-1	0	0	0
+3	9	-1	3	0	0
+10	6	-1	6	0	0
+11	10	-1	0	0	0
+7	11	-1	6	0	0
+12	8	-1	2	0	0
+13	9	-1	2	0	0
+14	10	-1	5	0	0
+15	11	-1	5	0	0
+12	13	-1	1	0	0
+14	15	-1	1	0	0
+16	17	-1	8	0	0
+18	19	-1	8	0	0
+16	0	-1	9	0	0
+18	1	-1	9	0	0
+17	4	-1	10	0	0
+19	5	-1	10	0	0
+20	21	-1	0	0	1
+22	20	-1	0	0	1
+23	22	-1	0	0	1
+21	23	-1	0	0	1
+24	25	-1	0	0	1
+26	24	-1	0	0	1
+27	26	-1	0	0	1
+25	27	-1	0	0	1
+28	29	-1	0	0	1
+30	28	-1	0	0	1
+31	30	-1	0	0	1
+29	31	-1	0	0	1
+32	33	-1	0	0	1
+34	32	-1	0	0	1
+35	34	-1	0	0	1
+33	35	-1	0	0	1
+36	37	-1	0	0	1
+38	36	-1	0	0	1
+39	38	-1	0	0	1
+37	39	-1	0	0	1
+40	41	-1	0	0	1
+42	40	-1	0	0	1
+43	42	-1	0	0	1
+41	43	-1	0	0	1
+[NumArcSegments] = 0
+[NumHoles] = 0
+[NumBlockLabels] = 13
+5	2.0899999999999999	1	-1	0	90	0	1	0
+5	-2.0899999999999999	1	-1	0	90	0	1	0
+5	4.3799999999999999	2	-1	0	0	0	1	0
+5	-4.3799999999999999	2	-1	0	0	0	1	0
+5	0	3	-1	0	0	0	1	0
+5	8.379999999999999	3	-1	0	0	0	1	0
+5	-8.379999999999999	3	-1	0	0	0	1	0
+1.6666666666666667	0.81750000000000012	4	-1	1	0	0	1	0
+1.6666666666666667	-0.81750000000000012	4	-1	2	0	0	1	0
+5	0.81750000000000012	4	-1	3	0	0	1	0
+5	-0.81750000000000012	4	-1	4	0	0	1	0
+8.3333333333333339	0.81750000000000012	4	-1	5	0	0	1	0
+8.3333333333333339	-0.81750000000000012	4	-1	6	0	0	1	0
