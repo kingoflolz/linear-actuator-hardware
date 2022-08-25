@@ -199,7 +199,7 @@ def writer_encoder():
     writer = gerber_writer("output/encoder.gko")
 
     writer.primitives = [
-        *rect_outline(-5, -18, 305, 18)
+        *rect_outline(-5, -18, 205, 18)
     ]
 
     writer.write()
@@ -207,7 +207,7 @@ def writer_encoder():
     writer = gerber_writer("output/encoder.gbl")
 
     writer.primitives = [
-        rect(-5, -18, 305, 18)
+        rect(-5, -18, 205, 18)
     ]
 
     writer.write()
@@ -217,15 +217,15 @@ def writer_encoder():
     writer = gerber_writer("output/encoder.gts")
 
     writer.primitives = [
-        rect(-5, alignment + 3.5 * 0 + 1.15, 305, alignment + 3.5 * 0 - 1.15),
-        rect(-5, alignment + 3.5 * 1 + 1.15, 305, alignment + 3.5 * 1 - 1.15),
-        rect(-5, alignment + 3.5 * 2 + 1.15, 305, alignment + 3.5 * 2 - 1.15),
-        rect(-5, alignment + 3.5 * 3 + 1.15, 305, alignment + 3.5 * 3 - 1.15),
+        rect(-5, alignment + 3.5 * 0 + 1.15, 205, alignment + 3.5 * 0 - 1.15),
+        rect(-5, alignment + 3.5 * 1 + 1.15, 205, alignment + 3.5 * 1 - 1.15),
+        rect(-5, alignment + 3.5 * 2 + 1.15, 205, alignment + 3.5 * 2 - 1.15),
+        rect(-5, alignment + 3.5 * 3 + 1.15, 205, alignment + 3.5 * 3 - 1.15),
 
-        rect(-5, -alignment - 3.5 * 0 + 1.15, 305, -alignment - 3.5 * 0 - 1.15),
-        rect(-5, -alignment - 3.5 * 1 + 1.15, 305, -alignment - 3.5 * 1 - 1.15),
-        rect(-5, -alignment - 3.5 * 2 + 1.15, 305, -alignment - 3.5 * 2 - 1.15),
-        rect(-5, -alignment - 3.5 * 3 + 1.15, 305, -alignment - 3.5 * 3 - 1.15),
+        rect(-5, -alignment - 3.5 * 0 + 1.15, 205, -alignment - 3.5 * 0 - 1.15),
+        rect(-5, -alignment - 3.5 * 1 + 1.15, 205, -alignment - 3.5 * 1 - 1.15),
+        rect(-5, -alignment - 3.5 * 2 + 1.15, 205, -alignment - 3.5 * 2 - 1.15),
+        rect(-5, -alignment - 3.5 * 3 + 1.15, 205, -alignment - 3.5 * 3 - 1.15),
     ]
 
     writer.write()
@@ -233,33 +233,33 @@ def writer_encoder():
     writer = gerber_writer("output/encoder.gbs")
 
     writer.primitives = [
-        rect(-5, alignment + 3.5 * 0 + 1.6, 305, alignment + 3.5 * 0 - 1.6),
-        rect(-5, alignment + 3.5 * 1 + 1.6, 305, alignment + 3.5 * 1 - 1.6),
-        rect(-5, alignment + 3.5 * 2 + 1.6, 305, alignment + 3.5 * 2 - 1.6),
-        rect(-5, alignment + 3.5 * 3 + 1.6, 305, alignment + 3.5 * 3 - 1.6),
+        rect(-5, alignment + 3.5 * 0 + 1.6, 205, alignment + 3.5 * 0 - 1.6),
+        rect(-5, alignment + 3.5 * 1 + 1.6, 205, alignment + 3.5 * 1 - 1.6),
+        rect(-5, alignment + 3.5 * 2 + 1.6, 205, alignment + 3.5 * 2 - 1.6),
+        rect(-5, alignment + 3.5 * 3 + 1.6, 205, alignment + 3.5 * 3 - 1.6),
 
-        rect(-5, -alignment - 3.5 * 0 + 1.6, 305, -alignment - 3.5 * 0 - 1.6),
-        rect(-5, -alignment - 3.5 * 1 + 1.6, 305, -alignment - 3.5 * 1 - 1.6),
-        rect(-5, -alignment - 3.5 * 2 + 1.6, 305, -alignment - 3.5 * 2 - 1.6),
-        rect(-5, -alignment - 3.5 * 3 + 1.6, 305, -alignment - 3.5 * 3 - 1.6),
+        rect(-5, -alignment - 3.5 * 0 + 1.6, 205, -alignment - 3.5 * 0 - 1.6),
+        rect(-5, -alignment - 3.5 * 1 + 1.6, 205, -alignment - 3.5 * 1 - 1.6),
+        rect(-5, -alignment - 3.5 * 2 + 1.6, 205, -alignment - 3.5 * 2 - 1.6),
+        rect(-5, -alignment - 3.5 * 3 + 1.6, 205, -alignment - 3.5 * 3 - 1.6),
     ]
 
     writer.write()
 
     writer = gerber_writer("output/encoder.gtl")
 
-    out_of_phase_strip(0, 300, - alignment - 3.5 * 0, 3, 128, phase_offset=(0, 0.5))
+    out_of_phase_strip(0, 200, - alignment - 3.5 * 0, 3, 128, phase_offset=(0, 0.5))
 
     writer.primitives = [
-        *out_of_phase_strip(0, 300, alignment + 3.5 * 0, 2, 256, phase_offset=(0, 0.5)),
-        *out_of_phase_strip(0, 300, alignment + 3.5 * 1, 2, 256, phase_offset=(0.25, 0.75)),
-        *out_of_phase_strip(0, 300, alignment + 3.5 * 2, 2, 240, phase_offset=(0, 0.25)),
-        *out_of_phase_strip(0, 300, alignment + 3.5 * 3, 2, 255, phase_offset=(0, 0.25)),
+        *out_of_phase_strip(0, 200, alignment + 3.5 * 0, 2, 256, phase_offset=(0, 0.5)),
+        *out_of_phase_strip(0, 200, alignment + 3.5 * 1, 2, 256, phase_offset=(0.25, 0.75)),
+        *out_of_phase_strip(0, 200, alignment + 3.5 * 2, 2, 240, phase_offset=(0, 0.25)),
+        *out_of_phase_strip(0, 200, alignment + 3.5 * 3, 2, 255, phase_offset=(0, 0.25)),
 
-        *out_of_phase_strip(0, 300, - alignment - 3.5 * 0, 2, 128, phase_offset=(0, 0.5)),
-        *out_of_phase_strip(0, 300, - alignment - 3.5 * 1, 2, 128, phase_offset=(0.25, 0.75)),
-        *out_of_phase_strip(0, 300, - alignment - 3.5 * 2, 2, 112, phase_offset=(0, 0.25)),
-        *out_of_phase_strip(0, 300, - alignment - 3.5 * 3, 2, 129, phase_offset=(0, 0.25)),
+        *out_of_phase_strip(0, 200, - alignment - 3.5 * 0, 2, 128, phase_offset=(0, 0.5)),
+        *out_of_phase_strip(0, 200, - alignment - 3.5 * 1, 2, 128, phase_offset=(0.25, 0.75)),
+        *out_of_phase_strip(0, 200, - alignment - 3.5 * 2, 2, 112, phase_offset=(0, 0.25)),
+        *out_of_phase_strip(0, 200, - alignment - 3.5 * 3, 2, 129, phase_offset=(0, 0.25)),
     ]
 
     writer.write()
@@ -267,15 +267,15 @@ def writer_encoder():
     writer = gerber_writer("output/encoder.gbl")
 
     writer.primitives = [
-        *out_of_phase_strip(0, 300, alignment + 3.5 * 0, 3, 256, phase_offset=(0, 0.5)),
-        *out_of_phase_strip(0, 300, alignment + 3.5 * 1, 3, 256, phase_offset=(0.25, 0.75)),
-        *out_of_phase_strip(0, 300, alignment + 3.5 * 2, 3, 240, phase_offset=(0, 0.25)),
-        *out_of_phase_strip(0, 300, alignment + 3.5 * 3, 3, 255, phase_offset=(0, 0.25)),
+        *out_of_phase_strip(0, 200, alignment + 3.5 * 0, 3, 256, phase_offset=(0, 0.5)),
+        *out_of_phase_strip(0, 200, alignment + 3.5 * 1, 3, 256, phase_offset=(0.25, 0.75)),
+        *out_of_phase_strip(0, 200, alignment + 3.5 * 2, 3, 240, phase_offset=(0, 0.25)),
+        *out_of_phase_strip(0, 200, alignment + 3.5 * 3, 3, 255, phase_offset=(0, 0.25)),
 
-        *out_of_phase_strip(0, 300, - alignment - 3.5 * 0, 3, 128, phase_offset=(0, 0.5)),
-        *out_of_phase_strip(0, 300, - alignment - 3.5 * 1, 3, 128, phase_offset=(0.25, 0.75)),
-        *out_of_phase_strip(0, 300, - alignment - 3.5 * 2, 3, 112, phase_offset=(0, 0.25)),
-        *out_of_phase_strip(0, 300, - alignment - 3.5 * 3, 3, 129, phase_offset=(0, 0.25)),
+        *out_of_phase_strip(0, 200, - alignment - 3.5 * 0, 3, 128, phase_offset=(0, 0.5)),
+        *out_of_phase_strip(0, 200, - alignment - 3.5 * 1, 3, 128, phase_offset=(0.25, 0.75)),
+        *out_of_phase_strip(0, 200, - alignment - 3.5 * 2, 3, 112, phase_offset=(0, 0.25)),
+        *out_of_phase_strip(0, 200, - alignment - 3.5 * 3, 3, 129, phase_offset=(0, 0.25)),
     ]
 
     writer.write()

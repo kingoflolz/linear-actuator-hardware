@@ -11,12 +11,12 @@ for i in range(100):
     if name != "BAD INDEX!":
         layertable[name] = i
 
-offset_x = 50 + 7.7 / 2
+offset_x = 50 + (150 - 9.5 * (15 + 2/3)) / 2
 offset_y = 122
 
 
 def draw_via(x, y, net):
-    v = pcbnew.VIA(board)
+    v = pcbnew.PCB_VIA(board)
     v.SetPosition(pcbnew.wxPoint(int(1e6 * x), int(1e6 * y)))
     v.SetDrill(int(1e6 * 0.25))
     v.SetWidth(int(1e6 * 0.5))
@@ -50,7 +50,7 @@ def draw_rect(layer, net, x1, y1, x2, y2):
     y2 = int(1e6 * (y2 + offset_y))
 
     motor_net = board.GetNetcodeFromNetname(net)
-    area = board.AddArea(None, motor_net, layertable[layer], pcbnew.wxPoint(x1, y1), pcbnew.ZONE_CONTAINER.DIAGONAL_EDGE)
+    area = board.AddArea(None, motor_net, layertable[layer], pcbnew.wxPoint(x1, y1), pcbnew.ZONE_FILL_MODE_POLYGONS)
 
     outline = area.Outline()
 
@@ -88,11 +88,17 @@ def draw_motor():
     trace_total = phase_width / 3
     trace_width = phase_width / 3 - trace_space
 
-    motor_turns = 15
+    motor_turns = 16
 
     for i in range(motor_turns):
         phase_start = i * phase_width
         for j in range(3):
+            if i == 0 and j == 1:
+                continue
+
+            if i == motor_turns - 1 and j != 1:
+                continue
+
             net = f"/{phase_idx[j]}/MOTOR"
 
             draw_rects(["F.Cu", "In1.Cu", "In2.Cu", "B.Cu"], net,
